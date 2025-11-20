@@ -3,6 +3,7 @@ package com.akhona.javalab.core;
 public class Operators {
     public static void main(String[] args) {
         implementArithmeticOperator();
+        implementRelationalOperator();
     }
 
     private static void implementArithmeticOperator() {
@@ -15,5 +16,13 @@ public class Operators {
         System.out.println(num1++);
         System.out.println(++num1);
 
+    }
+
+    private static void implementRelationalOperator() {
+        int x = 7;
+        int y = 5;
+
+        boolean result = x >= y;
+        System.out.println(result);
     }
 }
