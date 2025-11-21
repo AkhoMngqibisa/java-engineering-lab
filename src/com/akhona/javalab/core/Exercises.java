@@ -4,6 +4,7 @@ public class Exercises {
 
     public static void main(String[] args) {
         exercise1();
+        exercise2();
     }
 
     /**
@@ -22,5 +23,29 @@ public class Exercises {
         String name = "Alex";
 
         System.out.println("Name:"+name+",Age:"+age+",Height:"+height);
+    }
+
+    /**
+     * 1.  Declare two integer variables a = 20 and b = 10.
+     * 2.  Perform the following operations:
+     *  a. Add, subtract, multiply, and divide a and b
+     *  b. Compare if a is greater than b and store the result in a boolean variable
+     *  c. Check if a > b and b > 0 using a logical operator and store the result
+     * 3.  Print the results of all operations using System.out.println() in the specified format.
+     */
+    private static void exercise2(){
+        int a = 20;
+        int b = 10;
+
+        System.out.println("Addition: " + (a + b));
+        System.out.println("Subtraction: " + (a - b));
+        System.out.println("Multiplication: " + (a * b));
+        System.out.println("Division: " + (a / b));
+
+        boolean results = a > b;
+        System.out.println("Is a greater than b? " + results);
+
+        boolean results2 = (a > b) && (b > 0);
+        System.out.println("Is a > b and b > 0? " + results2);
     }
 }
