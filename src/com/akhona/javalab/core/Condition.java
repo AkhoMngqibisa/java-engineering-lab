@@ -4,6 +4,7 @@ public class Condition {
     public static void main(String[] args) {
         implementIfElse();
         implementIfElseIf();
+        implementTernary();
     }
 
     private static void implementIfElse() {
@@ -26,9 +27,18 @@ public class Condition {
             System.out.println(x);
         } else if (y > z) {
             System.out.println(y);
-        } else  {
+        } else {
             System.out.println(z);
         }
+
+    }
+
+    private static void implementTernary() {
+        int n = 5;
+        int results = 0;
+
+        results = n % 2 == 0 ? 10 : 20;
+        System.out.println(results);
 
     }
 }
